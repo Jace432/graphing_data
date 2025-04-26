@@ -15,4 +15,7 @@ graph.scatter(0,0, s=50, color="green",
 graph.scatter(rw.x_values[-1], rw.y_values[-1], s=50, color="red",
               edgecolors="none")
 
+graph.get_xaxis().set_visible(False)
+graph.get_yaxis().set_visible(False)
+
 plt.show()
