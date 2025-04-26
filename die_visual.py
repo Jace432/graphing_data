@@ -17,5 +17,7 @@ for value in pos_results:
     freq = results.count(value)
     frequencies.append(freq)
 
-fig = px.bar(x=pos_results, y=frequencies)
+fig = px.bar(x=pos_results, y=frequencies, 
+             title=f"Frequence of {die.num_sides} sides of die rolls",
+             labels={"x" : "Possible Values","y" : "Frequency"})
 fig.show()
