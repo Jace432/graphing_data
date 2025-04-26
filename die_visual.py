@@ -23,4 +23,4 @@ fig = px.bar(x=pos_results, y=frequencies,
              title=f"Frequence of rolling two D{die1.num_sides} dice",
              labels={"x" : "Possible Values","y" : "Frequency"})
 fig.update_layout()
-fig.show()
+fig.write_html("dice_visual_d10d20.html")
